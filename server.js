@@ -16,7 +16,8 @@ app.use(express.json());
 app.use(express.static("public"));
 
 mongoose.connect(
-  "mongodb://sofka:mlab0606@ds063177.mlab.com:63177/heroku_38psdrp9",
+  process.env.MONGODB_URL ||
+    "mongodb://sofka:mlab0606@ds063177.mlab.com:63177/heroku_38psdrp9",
   {
     useNewUrlParser: true,
     useFindAndModify: false,
