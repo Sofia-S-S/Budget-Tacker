@@ -17,10 +17,10 @@ app.use(express.static("public"));
 
 mongoose.connect(
   process.env.MONGODB_URL ||
-    "mongodb://sofka:mlab0606@ds063177.mlab.com:63177/heroku_38psdrp9",
+    "mongodb://Sofka:mlab0606@ds063177.mlab.com:63177/heroku_38psdrp9",
   {
-    useNewUrlParser: true,
-    useFindAndModify: false,
+    // useNewUrlParser: true,
+    // useFindAndModify: false,
     useMongoClient: true
   }
 );
